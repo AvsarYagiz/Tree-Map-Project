@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>TreeMap</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h2 id="title">Highest Grossing Movies</h2>
+    <!-- Description -->
+    <div id="description">Top 95 Highest Grossing Movies Sorted by Revenue</div>
+    <!-- SVG container for the tree map -->
+    <svg id="canvas"></svg>
+    <!-- Legend for the categories -->
+    <svg id="legend">
+        <g>
+            <!-- Legend item for "Action" category -->
+            <rect class="legend-item" x="10" y="0" width="15" height="15" fill="firebrick" stroke="black"></rect>
+            <text x="40" y="12" fill="black">Action</text>
+        </g>
+        <!-- Repeat the above group for each category -->
+        <g>
+            <rect class="legend-item" x="10" y="30" width="15" height="15" fill="deepskyblue" stroke="black"></rect>
+            <text  x="40" y="42" fill="black">Drama</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="10" y="60" width="15" height="15" fill="darkseagreen" stroke="black"></rect>
+            <text x="40" y="72" fill="black">Adventure</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="150" y="0" width="15" height="15" fill="khaki" stroke="black"></rect>
+            <text x="180" y="12" fill="black">Family</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="150" y="30" width="15" height="15" fill="darkorchid" stroke="black"></rect>
+            <text x="180" y="42" fill="black">Animation</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="290" y="0" width="15" height="15" fill="orange" stroke="black"></rect>
+            <text x="320" y="12" fill="black">Comedy</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="290" y="30" width="15" height="15" fill="saddlebrown" stroke="black"></rect>
+            <text x="320" y="42" fill="black">Biography</text>
+        </g>
+    </svg>
+</body>
+<!-- Script file containing the D3.js code -->
+<script src="JS\script.js"></script>
+</html>

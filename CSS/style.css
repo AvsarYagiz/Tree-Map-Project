@@ -1,0 +1,61 @@
+*{
+    font-family: sans-serif;
+    
+}
+
+/* Set a minimum height for the html and body elements to fill the viewport */
+html, body{
+    min-height: 100%;
+}
+
+/* Center the content vertically and horizontally */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+    
+    
+}
+
+/* Styling for the tree map SVG container */
+#canvas{
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+/* Styling for the legend SVG container */
+#legend{
+    min-width: 400px;   
+    font-size: 12px; 
+    margin-top: 20px;
+    background-color:  rgb(207, 207, 207);
+}
+
+/* Styling for the tooltip */
+#tooltip {
+    display: flex;
+    color:black;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 15px;
+    opacity: 0.9;   
+    background: whitesmoke;
+    box-shadow: 1px 1px 10px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+/* Styling for the tiles in the tree map */
+.tile{
+    border-radius: 2px;
+}
+#description{
+    margin-bottom: 20px;
+}
